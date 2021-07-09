@@ -1,0 +1,27 @@
+input {
+    border: none;
+    outline: none;
+}
+
+#countryCode {
+    border: none;
+    outline: none;
+    padding: 2px;
+}
+
+.input-1 {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid;
+    width: 250px;
+    border-radius: 20px;
+    height: 30px;
+}
+
+.input-2 {
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 2px;
+    padding-left: 4px;
+    width: 40%;
+}

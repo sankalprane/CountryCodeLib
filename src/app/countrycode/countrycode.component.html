@@ -1,0 +1,14 @@
+<form #Form="ngForm">
+    <div class="input-1">
+        <div class="input-2">
+            <select id="countryCode" (change)="action()" [(ngModel)]="countryCode" name="select-tag" class="form-control">
+                <ng-container *ngFor="let country of countryList">
+                    <option [value]="country.dial_code">{{country.code}}</option>
+                </ng-container>
+            </select>
+            <span>{{countryCode}}</span>
+            
+        </div>
+        <input type="tel" [disabled]="_disabled" maxlength="12" size="12" (change)="action()" [(ngModel)]="number" name="number">
+    </div>
+</form>
